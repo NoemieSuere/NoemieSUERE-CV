@@ -1,0 +1,187 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: Times;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #02090f;
+}
+p{
+    font-size: 1em;
+    /*espacement entre les phrases*/
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER */
+header{
+    width: 100%;
+    padding: 180px 0px;
+    background: url("fond1.jpg");
+    border-bottom: 2px solid rgb(94, 94, 94);
+    height: 300px;
+}
+header h1{
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+header h2{
+    color: white;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(161, 159, 168, 0.445);
+    background-color: rgb(255, 255, 255);
+}
+
+section h2{
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*INFORMATION*/
+
+/*Barre telechargement cv*/
+.presentation a{
+    display:block;
+    block-size: 20%;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    width: 168px;
+    color: black;
+    background-color: rgba(51, 61, 104, 0.411);
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/*EXPERIENCE ET FORMATION*/
+.exp{
+   
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.exp h4{
+  
+    font-weight: normal;
+}
+
+/*COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/*BARRE DES COMPETENCES TAILLE*/
+.c40{
+    width: 40%;
+    background-color: rgb(27, 65, 97);
+    border-radius: 5px;
+}
+.c95{
+    width: 95%;
+    background-color: rgba(27, 65, 97);
+}
+.c90{
+    width: 90%;
+    background-color: rgba(27, 65, 97);
+}
+.c60{
+    width: 60%;
+    background-color: rgba(27, 65, 97);
+    border-radius: 5px;
+}
+.c85{
+    width: 85%;
+    background-color: rgba(27, 65, 97);
+}
+
+/*CENTRE D'INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+.contact img{
+    width: 20px;
+    height: 20px;
+ 
+    
+}
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+     section{
+        width: 70%;
+    }
+    a:hover{
+        color: rgb(72, 65, 167);
+    }
+    header h1{
+        width: 80%;
+    }
+    .presentation a{
+        border: 2px solid transparent;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+       
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
